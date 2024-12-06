@@ -1,0 +1,59 @@
+* {
+    cursor: grab;
+    font-style: italic;
+}
+
+
+body {
+    user-select: none; 
+    background-color: rgb(243, 238, 88);
+    overflow: hidden;
+}
+
+.score-board{
+    font-size: x-large;
+    opacity: 80%;
+}
+
+.comment {
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.jerry {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: grabbing;
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    border-radius: 5%;
+    z-index: 3;
+    background: url("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGk0d2k1OHZ6NzdrZ3RidXRyb25vdXZwZGJpaTF4czdoOGZ4aHdpcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/98py5SveIyU4wN0rHt/giphy.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.no-cheating-message {
+    display: none;
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+    margin-top: 20%;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    .comment, .jerry, .score-board {
+        display: none; /* Hide all site content */
+    }
+
+    .no-cheating-message {
+        display: block; /* Show 'No Cheating' message */
+    }
+}
+
